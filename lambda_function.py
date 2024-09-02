@@ -3,8 +3,8 @@ import requests
 import json
 import os
 
-# TeamsのWebhook URL
-workflows_url = os.environ["workflows_url"]'Workflow作成時に発行されたURLを指定'
+# TeamsのWebhook URLをLambdaの環境変数で指定
+workflows_url = os.environ["workflows_url"]
 groupId = os.environ["groupId"]
 channelId = os.environ["channelId"]
 
